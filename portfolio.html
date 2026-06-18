@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — EditKaro</title>
+<meta name="description" content="Browse EditKaro's video editing portfolio across short-form, long-form, gaming, football, eCommerce, documentary, color grading, anime and ad edits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="dot"></span>EDITKARO</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Media bin</p>
+      <h1>Portfolio</h1>
+      <p class="lede">Every cut below is filed by category, the same way it'd sit on our timeline. Filter by type or browse the full bin.</p>
+    </div>
+  </section>
+
+  <section class="chapter" style="border-bottom:none; padding-top:0;">
+    <div class="wrap">
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="grid-cards" id="portfolio-grid"></div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-card" data-lb-content style="position:relative;">
+    <button class="lightbox-close" data-lb-close aria-label="Close">×</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><span class="dot"></span>EDITKARO</a>
+        <p>A video editing and social media marketing agency, helping brands and creators ship content that holds attention.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@editkaro.in">hello@editkaro.in</a></li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li>Hyderabad, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EditKaro. All rights reserved.</span>
+      <span>Built as a developer trial project</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/portfolio-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

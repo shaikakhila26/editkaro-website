@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — EditKaro</title>
+    <meta
+      name="description"
+      content="EditKaro is a video editing and social media marketing agency. Learn about our mission, vision, process, and team."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="index.html"><span class="dot"></span>EDITKARO</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="nav-cta">Start a project</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">About</p>
+          <h1>A small bay, a wide range of cuts.</h1>
+          <p class="lede">
+            EditKaro is a video editing and social media marketing agency based
+            in India, working with brands and creators who need their footage
+            turned into content people actually finish watching.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <div class="wrap mv-grid">
+          <div class="mv-card">
+            <p class="eyebrow">Mission</p>
+            <p>
+              To give every client — from a solo creator to a growing brand —
+              editing that's fast, consistent, and built around how their
+              specific audience watches and scrolls.
+            </p>
+          </div>
+          <div class="mv-card">
+            <p class="eyebrow">Vision</p>
+            <p>
+              To be the edit bay brands return to for every category of video
+              they make, from a 15-second hook to a full documentary cut.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <div class="wrap">
+          <div class="chapter-head">
+            <span class="chapter-num">CH. 01</span>
+            <h2>How a project moves through the bay</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <p class="step-num">01 — Ingest</p>
+              <h3>Footage &amp; brief in</h3>
+              <p>
+                Raw footage, brand notes, and reference cuts land in a shared
+                project folder.
+              </p>
+            </div>
+            <div class="process-step">
+              <p class="step-num">02 — Assemble</p>
+              <h3>Rough cut</h3>
+              <p>
+                Structure, pacing, and selects come together into a first
+                watchable version.
+              </p>
+            </div>
+            <div class="process-step">
+              <p class="step-num">03 — Grade &amp; Mix</p>
+              <h3>Color &amp; sound</h3>
+              <p>
+                Color grading, music, sound design, and titles are layered onto
+                the locked cut.
+              </p>
+            </div>
+            <div class="process-step">
+              <p class="step-num">04 — Deliver</p>
+              <h3>Export &amp; hand-off</h3>
+              <p>
+                Platform-ready exports go out, sized and formatted for where
+                they'll actually run.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter" style="border-bottom: none">
+        <div class="wrap">
+          <div class="chapter-head">
+            <span class="chapter-num">CH. 02</span>
+            <h2>Team</h2>
+          </div>
+          <div class="team-grid" id="team-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="index.html"
+              ><span class="dot"></span>EDITKARO</a
+            >
+            <p>
+              A video editing and social media marketing agency, helping brands
+              and creators ship content that holds attention.
+            </p>
+          </div>
+          <div>
+            <h4>Site</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:hello@editkaro.in">hello@editkaro.in</a></li>
+              <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+              <li>Hyderabad, India</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 EditKaro. All rights reserved.</span>
+          <span>Built as a developer trial project</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const TEAM = [
+        { name: "Aarav Mehta", role: "Lead Editor", color: "#FF7A33" },
+        { name: "Diya Kapoor", role: "Colorist", color: "#4DD8C8" },
+        { name: "Rohan Iyer", role: "Motion Designer", color: "#9D7BFF" },
+        { name: "Sara Fernandes", role: "Sound Designer", color: "#5FD16B" },
+        { name: "Vikram Nair", role: "Social Strategist", color: "#FFC94D" },
+        { name: "Anika Rao", role: "Client Producer", color: "#FF5C8A" },
+      ];
+      document.getElementById("team-grid").innerHTML = TEAM.map((p) => {
+        const initials = p.name
+          .split(" ")
+          .map((n) => n[0])
+          .join("");
+        return `
+      <div class="team-card">
+        <div class="avatar" style="background:${p.color}">${initials}</div>
+        <div class="name">${p.name}</div>
+        <div class="role">${p.role}</div>
+      </div>`;
+      }).join("");
+    </script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
