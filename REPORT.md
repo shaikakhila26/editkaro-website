@@ -3,7 +3,7 @@
 Name: Akhila
 Project: Major Project — Complete the Editkaro.in Website
 GitHub repo: https://github.com/shaikakhila26/editkaro-website
-Live site: [add link]
+Live site: https://editkaro-website-iota.vercel.app/
 
 ## What I did
 

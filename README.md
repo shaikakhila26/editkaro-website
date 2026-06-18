@@ -6,7 +6,7 @@ website for Editkaro.in, a video editing and social media agency.
 It's a plain HTML/CSS/JS site, no framework. 4 pages: Home, Portfolio,
 About, Contact.
 
-**Live site:** [add your deployed link here]
+**Live site:** https://editkaro-website-iota.vercel.app/
 **Repo:** https://github.com/shaikakhila26/editkaro-website
 
 ## Pages
